@@ -6,6 +6,10 @@ namespace spike_lucene
     {
         void Add(SimpleDocument document);
 
-        IEnumerable<SimpleDocument> Search(string search); 
+        IEnumerable<SimpleDocument> DocumentsByTextSearch(string search);
+
+        IEnumerable<SimpleDocument> DocumentsByTag(string tag);
+
+        IEnumerable<SimpleDocument> DocumentsByResource(string resource);
     }
 }
